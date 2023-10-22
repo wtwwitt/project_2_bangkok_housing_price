@@ -1,0 +1,97 @@
+========================= Model 1 =========================
+dist_subdist - dummy
+property_type - dummy
+total_units - KNN imputed
+bedrooms - drop null value
+baths - drop null value
+floor_area
+floor_level - mean of each category imputed
+nearby_station_distance - dummy (distance as value, not nearby = 0)
+nearby_supermarkets - drop null value
+nearby_shops
+year_built
+facilities - dummy
+
+========================= Model 2 ========================= 
+dist_subdist - dummy
+property_type - dummy
+total_units - KNN imputed
+bedrooms - drop null value
+baths - drop null value
+floor_area
+* floor_level - KNN imputed
+nearby_station_distance - dummy (distance as value, not nearby = 0)
+nearby_supermarkets - drop null value
+nearby_shops
+* year_built - KNN imputed
+facilities - dummy
+
+========================= Model 3 =========================
+Polynomial degree = 2
+
+property_type - dummy
+total_units - KNN imputed
+bedrooms - drop null value
+baths - drop null value
+floor_area
+* floor_level - KNN imputed
+latitude
+togitude
+nearby_stations
+nearby_supermarkets - drop null value
+nearby_shops
+* year_built - KNN imputed
+
+========================= Model 4 =========================
+Polynomial degree = 2 (exclude dummy columns)
+
+property_type - dummy
+total_units - KNN imputed
+bedrooms - drop null value
+baths - drop null value
+floor_area
+* floor_level - KNN imputed
+latitude
+togitude
+nearby_stations
+nearby_station_distance - dummy (distance as value, not nearby = 0)
+nearby_supermarkets - drop null value
+nearby_shops
+* year_built - KNN imputed
+
+========================= Model 5 =========================
+Polynomial degree = 2 (exclude dummy columns, reduce poly columns)
+
+dist_subdist - dummy
+property_type - dummy
+total_units (poly) - KNN imputed
+bedrooms (poly) - drop null value
+baths (poly) - drop null value
+floor_area (poly)
+* floor_level (poly) - KNN imputed
+latitude
+longitude
+nearby_stations (poly)
+nearby_station_distance - mean distance as value, not nearby = 0
+nearby_supermarkets (poly) - drop null value
+nearby_shops (poly)
+* year_built (poly) - KNN imputed - converted to age (2023 - year_built)
+
+========================= Model 6 ========================= Current Best
+Polynomial degree = 2 (exclude dummy columns, reduce poly columns)
+train_size = 0.65
+
+dist_subdist - dummy
+property_type - dummy
+total_units (poly) - KNN imputed
+bedrooms (poly) - drop null value
+baths (poly) - drop null value
+floor_area (log + poly)
+* floor_level (log + poly) - KNN imputed
+latitude
+longitude
+nearby_stations (poly)
+nearby_station_distance - dummy (distance as value, not nearby = 0)
+nearby_supermarkets (poly) - drop null value
+nearby_shops (poly)
+* year_built (poly) - KNN imputed - converted to age (2023 - year_built)
