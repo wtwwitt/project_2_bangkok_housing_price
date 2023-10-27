@@ -11,9 +11,11 @@
 |land_area|float|total area of the land [㎡]|
 |nearby_stations|int|the number of nearby stations (within 1km)|
 |nearby_station_distance|list|list of (station name, distance[m]). <br/>Each station name consists of station ID, station name, and Line such as "E4 Asok BTS"|
+|nearby_bus_stops|int|the number of nearby bus stops|
 |nearby_supermarkets|int|the number of nearby supermarkets|
 |nearby_shops|int|the number of nearby shops|
 |year_built|int|year built|
+|facilities|list|list of facilities|
 
 
 |Column|Description|Transformation|
@@ -28,6 +30,8 @@
 |nearby_supermarkets|the number of nearby supermarkets|polynomial degree 2|
 |nearby_shops|the number of nearby shops|polynomial degree 2|
 |year_built|year built|polynomial degree 2|
-|nearby_station_distance|list of (station name, distance[m]). <br/>Each station name consists of station ID, station name, and Line such as "E4 Asok BTS"|Dummified (to normalized distance)|
+|facilities|list of facilities|Converted to facilities count - polynomial degree 2|
+|nearby_bus_stops|the number of nearby bus stops|no transformation|
+|nearby_station_distance|list of (station name, distance[m]). <br/>Each station name consists of station ID, station name, and Line such as "E4 Asok BTS"|Dummified-like (to normalized distance)|
 |dist_subdist|district + subdistrict name concatenated|Dummified|
 |property_type|type of the house: Condo, Townhouse or Detached House|Dummified|

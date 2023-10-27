@@ -32,6 +32,7 @@ and that should gives some useful information for whoever you are, seller or buy
 |nearby_shops|int|the number of nearby shops|
 |year_built|int|year built|
 |month_built|string|month built: January-December|
+|facilities|list|list of facilities|
 |price|float|selling price|
 
 This analysis will use the data to create housing price prediction model using Linear Regression with/without some regularization.
