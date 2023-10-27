@@ -33,5 +33,25 @@
 |facilities|list of facilities|Converted to facilities count - polynomial degree 2|
 |nearby_bus_stops|the number of nearby bus stops|no transformation|
 |nearby_station_distance|list of (station name, distance[m]). <br/>Each station name consists of station ID, station name, and Line such as "E4 Asok BTS"|Dummified-like (to normalized distance)|
-|dist_subdist|district + subdistrict name concatenated|Dummified|
+|dist_subdist|district + subdistrict name concatenated with some value corrections|Dummified|
 |property_type|type of the house: Condo, Townhouse or Detached House|Dummified|
+
+
+For XGBoost
+|Column|Transformation|
+|---|---|
+|bedrooms|polynomial degree 2|
+|baths|polynomial degree 2|
+|nearby_stations|polynomial degree 2|
+|nearby_supermarkets|polynomial degree 2|
+|nearby_shops|polynomial degree 2|
+|nearby_station_distance|converted to distance mean + polynomial degree 2|
+|facilities|converted to facilities count - polynomial degree 2|
+|floor_area|no transformation|
+|floor_level|no transformation|
+|land_area|no transformation|
+|latitude|no transformation|
+|longitude|no transformation|
+|nearby_bus_stops|no transformation|
+|year_built|no transformation|
+|property_type|dummified|
