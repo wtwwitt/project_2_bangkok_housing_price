@@ -53,6 +53,7 @@ ___
 * Number of nearby supermarkets
 * Number of nearby shops
 * Year built
+* Number of facilities
 
 As there is a lot of missing data, various techniques is used to ensure that model training data is enough for better prediction accuracy,
 along with some transformations on the original data.
@@ -62,17 +63,17 @@ ___
 Final model can explain 79.4% of data with the average error of 945K baht approximately.
 
 The following factors are significantly affect housing price positively.
-* Floor area = 1545796.5615910804
-* Number of nearby stations (within 1km) = 1042440.2206633603
-* Number of bathrooms = 581180.969393779
-* Total area of the land = 448618.7936016499
-* Year built = 337037.24466519186
-* Number of bedrooms = 311841.7273388017
+* Floor area
+* Number of nearby stations (within 1km)
+* Number of bathrooms
+* Total area of the land
+* Year built
+* Number of bedrooms
 
 locating neaby these stations will raise approximated price as well.
-* BL11 Bang Sue MRT = 4616581.087902482
-* BL32 Itsaraphap MRT = 481137.7425890647
-* B9 Rama IX Bridge BRT = 403342.14190582786
+* BL11 Bang Sue MRT
+* BL32 Itsaraphap MRT
+* B9 Rama IX Bridge BRT
 
 and the following are top 10 district/subdistrict that will have higher housing price according to the model.
 |District|Subdistrict|
