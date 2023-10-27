@@ -34,7 +34,7 @@ and that should gives some useful information for whoever you are, seller or buy
 |month_built|string|month built: January-December|
 |price|float|selling price|
 
-This analysis will use the data to create price housing price prediction model using Linear Regression with/without some regularization.
+This analysis will use the data to create housing price prediction model using Linear Regression with/without some regularization.
 
 ### By experimenting with many models, the best one will be using the follow factors for prediction
 ___
@@ -56,7 +56,7 @@ ___
 As there is a lot of missing data, various techniques is used to ensure that model training data is enough for better prediction accuracy,
 along with some transformations on the original data.
 
-### The result
+### The results
 ___
 Final model can explain 79.4% of data with the average error of 945K baht approximately.
 
