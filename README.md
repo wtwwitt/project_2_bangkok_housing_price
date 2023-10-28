@@ -1,6 +1,6 @@
 # Executive Summary
 
-Do you ever have a problem when moving to a new home ?
+Do you ever have a problem with housing price when trying move to a new home ?
 
 Housing price in Bangkok is normally fluctuated due to many factors, some factors are considered to be positive for the price, but is that always true ?
 
