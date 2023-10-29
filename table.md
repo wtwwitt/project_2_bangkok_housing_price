@@ -55,3 +55,16 @@ For XGBoost
 |nearby_bus_stops|scaled|
 |year_built|scaled|
 |property_type|dummified|
+
+|District|Subdistrict|
+|---|---|
+|Bangkok Yai|Wat Arun|
+|Ratchathewi|Thung Phaya Thai|
+|Bang Rak|Maha Phruettharam|
+|Bang Rak|Suriyawong|
+|Watthana|Khlong Tan Nuea|
+|Pathum Wan|Rong Mueang|
+|Khlong Toei|Khlong Tan|
+|Watthana|Khlong Toei Nuea|
+|Khlong Toei|Khlong Toei|
+|Pathum Wan|Lumphini|
