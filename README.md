@@ -60,7 +60,7 @@ along with some transformations on the original data.
 
 ### The results
 ___
-Final model can explain 79.4% of data with the average error of 945K baht approximately.
+Final model can explain 79.8% of data with the average error of 971K baht approximately.
 
 The following factors are significantly affect housing price positively.
 * Floor area
